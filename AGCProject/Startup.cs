@@ -28,7 +28,7 @@ namespace AGCProject
         {
             //local development
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("AzureConnection")));
             
             //remote server deployment
             //services.AddDbContext<ApplicationDbContext>(options =>
